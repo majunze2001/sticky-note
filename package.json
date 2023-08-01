@@ -1,0 +1,23 @@
+{
+  "name": "sticky",
+  "version": "1.0.0",
+  "description": "a simple sticky note",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "./start.sh"
+  },
+  "type": "module",
+  "keywords": [
+    "express",
+    "socket.io",
+    "sticky-note"
+  ],
+  "author": "Jeff Ma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "socket.io": "^4.7.1"
+  }
+}

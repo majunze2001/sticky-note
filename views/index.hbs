@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
+    <style>
+        * {
+            margin: auto;
+        }
+
+        body {
+            padding-top: 10vh;
+            width: 60%;
+        }
+
+        div {
+            margin-bottom: 5vh;
+        }
+
+        Textarea {
+            width: 100%;
+            min-height: 20vh;
+            resize: none;
+            display: block;
+            margin-bottom: 5vh;
+        }
+
+        button {
+            display: block;
+            background-color: #e7e7e7;
+            color: black;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        {{#if note}}
+        {{ note }}
+        {{/if}}
+    </div>
+    <form action="" id="note-form">
+        <Textarea id="note"></Textarea>
+        <button id="btn">Submit</button>
+    </form>
+</body>
+
+</html>
